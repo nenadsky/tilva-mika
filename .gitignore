@@ -1,0 +1,8 @@
+#
+# Tilva Mika Gitignore file
+#
+
+vendor
+node_modules
+
+
