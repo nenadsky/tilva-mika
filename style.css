@@ -1018,7 +1018,7 @@ textarea {
 /* SLIDER */
 .portfolio--container {
   max-width: 100rem;
-  height: 30rem;
+  min-height: 30rem;
   margin: 0 auto;
   position: relative;
 
@@ -1051,8 +1051,8 @@ textarea {
   width: 65%;
   position: relative;
   display: grid;
-  grid-template-rows: 12rem 5rem;
-  row-gap: 3.5rem;
+  grid-auto-rows: minmax(min-content, max-content);
+  /* row-gap: 3.5rem; */
   grid-template-areas: "text" "image";
 }
 
@@ -1082,7 +1082,7 @@ textarea {
 
 .slider__btn--left {
   left: 1%;
-  transform: translate(-70%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .slider__btn--right {
@@ -1124,7 +1124,7 @@ textarea {
 }
 
 .bio-container {
-  margin: 0 3rem 2rem;
+  margin: 0 3rem;
 }
 
 .bio__tab-container {
@@ -1167,15 +1167,14 @@ textarea {
 
   /* JUST PRESENTATIONAL */
   font-size: 1.2rem;
-  padding: 2.5rem 1rem 6.5rem 1rem;
+  padding: 2.5rem 1rem;
   text-align: justify;
 }
 
 .bio__content--active {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 3rem 2rem 10rem;
-  gap: 5rem 2rem;
+  grid-auto-rows: minmax(min-content, max-content);
   grid-template-areas:
     "logo"
     "title"
@@ -1198,10 +1197,10 @@ textarea {
   font-size: 64px;
   color: var(--color-dark-blue);
 }
-
+/* 
 .bio__content {
   margin-bottom: 20rem;
-}
+} */
 
 .bio__content p {
   grid-area: content;
@@ -1220,12 +1219,6 @@ textarea {
   transition: all 0.3s;
 }
 
-@media screen and (min-width: 40rem) {
-  .bio__content {
-    margin-bottom: 2rem;
-  }
-}
-
 @media screen and (min-width: 48rem) {
   .posts-row {
     flex-direction: row;
@@ -1236,11 +1229,8 @@ textarea {
     row-gap: 0;
     column-gap: 2.25rem;
     grid-template-areas: "text image";
-    margin-bottom: 1rem;
     justify-items: center;
     align-items: center;
-    width: 80%;
-    margin-top: 8rem;
   }
 
   .project-text h3 {
@@ -1249,16 +1239,18 @@ textarea {
   }
 
   .project-text p {
-    font-size: 1.55rem;
+    font-size: 1.5rem;
   }
 
   .slider__btn--left {
-    left: 3%;
+    left: 5%;
+    top: 30%;
     transform: translate(-50%, -50%);
   }
 
   .slider__btn--right {
-    right: 6%;
+    right: 10%;
+    top: 30%;
     transform: translate(50%, -50%);
   }
 

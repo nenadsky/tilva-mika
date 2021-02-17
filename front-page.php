@@ -95,7 +95,7 @@ get_header();
 							<a href="http://wall-ye.com/"><h3><?php esc_html_e('WallYe', 'tilvamika'); ?></h3></a>
 							<p><?php esc_html_e('WallYe веб продавница потпуно аутоматизованих пољопривредних робота. ', 'tilvamika'); ?></p>
 							<p><?php esc_html_e('Бекенд: Фласк (Flask) - кодирао: Трле )', 'tilvamika'); ?></p>
-							<p><?php esc_html_e('Фронтенд: ХаТеЕмЕл5 ( HTML5 ), ЦеЕсЕс ( CSS ), ЈаваСкрипт, ЏејКуери ( jQuery ) - кодирао лично ;)', 'tilvamika'); ?></p>
+							<p><?php esc_html_e('Фронтенд: ХТМЛ5 ( HTML5 ), ЦСС ( CSS ), ЈаваСкрипт, ЏејКуери ( jQuery ) - кодирао лично ;)', 'tilvamika'); ?></p>
 						</div>
 						<?php $img = apply_filters('display_default_featured_img', 1714, 'fullsize'); ?>
 						<a href="http://wall-ye.com/"><img class="portfolio-image" src="<?php echo $img[0]; ?>" alt="WallYe Web Shop"></a>
@@ -107,7 +107,7 @@ get_header();
 							<a href="http://alkamaks.mk/"><h3><?php esc_html_e('AlkaMaks', 'tilvamika'); ?></h3></a>
 							<p><?php esc_html_e('Алка Макс месара ', 'tilvamika'); ?></p>
 							<p><?php esc_html_e('Покреће: Вордпресс', 'tilvamika'); ?></p>
-							<p><?php esc_html_e('Дизајн: ХаТеЕмЕл5 ( HTML5 ), ЦеЕсЕс ( CSS ), ЈаваСкрипт', 'tilvamika'); ?></p>
+							<p><?php esc_html_e('Дизајн: ХТМЛ5 ( HTML5 ), ЦСС ( CSS ), ЈаваСкрипт', 'tilvamika'); ?></p>
 						</div>
 						<?php $img = apply_filters('display_default_featured_img', 1713, 'fullsize'); ?>
 						<a href="http://alkamaks.mk/"><img class="portfolio-image" src="<?php echo $img[0]; ?>" alt="WallYe Web Shop"></a>
