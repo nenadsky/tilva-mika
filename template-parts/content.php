@@ -59,6 +59,7 @@
 
 	<footer class="entry-footer">
 		<?php tilvamika_entry_footer(); ?>
+		<?php /*echo get_the_tag_list('<p><ion-icon name="pricetags"></ion-icon> ',', ','</p>');*/ ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php/* the_ID(); */?>-->
 
